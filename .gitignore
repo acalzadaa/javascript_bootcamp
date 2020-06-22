@@ -1,11 +1,5 @@
-# npm debugging logs
-npm-debug.log*
-# project dependencies
-node_modules
-# OSX folder attributes
-.DS_Store
-# temporary files
-*.tmp
-*~
-# log files
-*.log
+/.eslintrc.json
+/.git
+/.gitignore
+/node_modules
+/package-lock.json
