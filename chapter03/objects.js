@@ -34,14 +34,3 @@ console.log(sam1.rollOver());
 
 const s = "Hello!";
 console.log(s.toUpperCase());
-
-// Array OBJECTS
-
-const a1 = [1,2,3,4];
-const a2 = [1, 'two', 3, null];
-const a3 = [ // array on multiple lines
-    "What the hammer? What the chain?",
-    "In what furnace was thy brain?",
-    "What the anvil? What dread grasp",
-    "Dare its deadly terrors clasp?",
-    ];
