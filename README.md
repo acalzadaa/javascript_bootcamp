@@ -1,5 +1,4 @@
-= Learning JavaScript, 3rd Edition
-== Chapter 2: JavaScript Development Tools
+* Super JavaScript tutorial
+** Chapter 1
 
-In this chapter we're learning about Git and other
-development tools.
+** Chapter 2
