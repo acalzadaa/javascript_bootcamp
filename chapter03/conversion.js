@@ -8,16 +8,17 @@ const c = parseFloat("15.5 kph");
 const d = new Date();
 const ts = d.valueOf();
 
-const b = true;
+const b2 = true;
 const n = b ? 1 : 0;
 
-const n = 33.5;
+const n2 = 33.5;
 const s = n.toString();
 
 const arr = [1,true, "hello"];
 arr.toString();
 
-const n = 0;
-const b1 = !!n;
-const b2 = Boolean(n);
+const n3 = 0;
+const b1 = n;
+const b5 = Boolean(n);
+console.log(b5);
 
