@@ -178,3 +178,5 @@ console.log(update);
 
 console.log(Math.min(...array));
 console.log(Math.max(...array))
+
+
