@@ -26,3 +26,9 @@ arr = [1, 2, 'c', 4, 5];
 console.log(arr);
 arr[2] = 3;
 console.log(arr);
+
+//adding a flat component
+
+const arr33 = [1,2,[3,7,[87,89,55],8],4];
+let arr35 = arr33.flat(Infinity);
+console.log(arr35.sort());
