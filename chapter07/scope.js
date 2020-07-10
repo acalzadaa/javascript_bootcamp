@@ -138,7 +138,7 @@ let letting; //let marca error porque fue utilizado antes de ser declarado!!!!
 // When you declare a variable with "var", it’s available everywhere in the current
 // scope…even before it’s declared
 
-hoisting;
+//hoisting;
 var hoisting; // var no marca error porque su existencia sucede incluso antes de que sea declarada!!!
 hoisting = 3;
 console.log("hoisting: " + hoisting);
@@ -155,3 +155,5 @@ function functionHoisting(){
 // let functionNotHoisted = function() {
 //     console.log('f');
 // }
+
+console.log(typeof typeof 3);
