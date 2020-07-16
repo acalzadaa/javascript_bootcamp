@@ -12,7 +12,7 @@ arr2[15] = 999;
 console.log(`Adding a new element!`);
 console.log(`New Size: ${arr2.length}`);
 
-//constuctors
+//constructors
 
 const arr5 = new Array();
 console.log(arr5);
@@ -187,7 +187,7 @@ console.log(names);
 const prices = cart.map(x => x.price);
 console.log(prices);
 
-const discountPrices = prices.map(x => x*0.8);
+const discountPrices = prices.map(x => x * 0.8);
 console.log(discountPrices);
 
 const lcNames = names.map(x => x.toLowerCase());
@@ -200,17 +200,75 @@ console.log(lcNames);
 // Like map, it returns a new array with elements removed.
 
 const cards = [];
-for(let suit of ['H', 'C', 'D', 'S'])
-    for(let value = 1; value <= 13; value ++)
-        cards.push({suit, value});
+for (let suit of ['H', 'C', 'D', 'S'])
+    for (let value = 1; value <= 13; value++)
+        cards.push({ suit, value });
 
 // get all DIAMONDS
 console.log(cards.filter(c => c.suit === 'D'));
 
 // get all FACE cards
 console.log(cards.filter(c => c.value > 10))
-;
+    ;
 
 //get all FACE cards and HEARTS
 cards.filter(c => c.value > 10 && c.suit === 'H');
 
+//Array Magic: reduce
+console.log("Javascript: Reduce Lesson");
+
+// array.reduce( (value, currentValue, INDEX, ARRAY) 0> { } , INITIAL_VALUE);
+// value -> temp variable, starts with the value of index === 0 
+// currentValue -> iterating value from an ARRAY
+// index -> CURRENT index of the iterating value
+// array -> the WHOLE array
+
+const euros = [29.76, 41.85, 46.5];
+
+console.log("Reduce -> Sum");
+
+const sum = euros.reduce((total, amount) => total + amount);
+console.log(sum);
+
+
+console.log("Reduce -> Avg");
+
+const average = euros.reduce((total, amount, index, array) => {
+    total += amount;
+    if (index === array.length - 1) {
+        return total / array.length
+    } else {
+        return total;
+    }
+});
+
+console.log(average);
+
+console.log("Reduce -> Doubled");
+
+const doubled = euros.reduce((total, amount) => {
+    total.push(amount * 2);
+    return total;
+}, []);
+
+console.log(doubled);
+
+console.log("Reduce -> Above 30");
+
+const above30 = euros.reduce((total, amount) => {
+    if (amount > 30) {
+        total.push(amount);
+    }
+    return total;
+}, [])
+
+console.log(above30);
+
+const fruitBasket = ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana', 'cherry', 'orange', 'fig'];
+
+let tally = fruitBasket.reduce( (tally, fruit) => {
+    tally[fruit] = (tally[fruit] || 0) +1; // tally[fruit] -> "unasigned" when empty
+    return tally;
+},{});
+
+console.log(tally);
