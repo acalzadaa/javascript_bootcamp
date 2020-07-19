@@ -50,9 +50,9 @@ console.log(above30);
 
 const fruitBasket = ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana', 'cherry', 'orange', 'fig'];
 
-let tally = fruitBasket.reduce((tally, fruit) => { // tally EMPTY VARIABLE, fruit INITIALIZED VARIABLE, index, array
+let tallyx = fruitBasket.reduce((tally, fruit) => { // tally EMPTY VARIABLE, fruit INITIALIZED VARIABLE, index, array
     tally[fruit] = (tally[fruit] || 0) + 1; // tally[fruit] -> "unasigned" when empty
     return tally;
 }, {});
 
-console.log(tally);
+console.log(tallyx);
