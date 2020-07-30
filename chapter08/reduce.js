@@ -1,7 +1,7 @@
 //Array Magic: reduce
 console.log("Javascript: Reduce Lesson");
 
-// array.reduce( (value, currentValue, INDEX, ARRAY) 0> { } , INITIAL_VALUE);
+// array.reduce( (value, currentValue, INDEX, ARRAY) => { } , INITIAL_VALUE);
 // value -> temp variable, starts with the value of index === 0 
 // currentValue -> iterating value from an ARRAY
 // index -> CURRENT index of the iterating value
